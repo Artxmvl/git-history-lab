@@ -1,27 +1,13 @@
-#include <iostream>
-#include <stdexcept>
+#include <iostream>  // Для std::cout и std::endl
 
+// Функция сложения: возвращает сумму двух целых чисел
 int add(int a, int b) {
     return a + b;
 }
 
-double divide(int a, int b) {
-    if (b == 0) {
-        throw std::runtime_error("Деление на ноль невозможно");
-    }
-    return static_cast<double>(a) / b;
-}
-
 int main() {
+    // Выводим результат сложения 2 + 3 в консоль
     std::cout << add(2, 3) << std::endl;
+    // Успешное завершение программы
     return 0;
 }
-
-int multiply(int a, int b) {
-    return a * b;
-}
-
-int subtract(int a, int b) {
-    return a - b;
-}
-
