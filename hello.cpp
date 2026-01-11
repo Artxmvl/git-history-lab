@@ -1,2 +1,8 @@
-#include <iostream>
-int main(){ std::cout << "Hello"; }
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
+}
+
